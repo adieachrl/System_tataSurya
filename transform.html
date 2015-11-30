@@ -1,0 +1,61 @@
+<style>
+.box{
+	width:100px;
+	height:100px;
+	background:#3399ff;
+	margin:20px;
+	color:white;
+	text-align:center;
+	line-height:50px;
+	float:left;
+	font-family:calibri,sans-serif
+
+	/* penambahan transition baca tutorialnya disini */
+	-webkit-transition:-webkit-transform 1s ease; 
+	-moz-transition:-moz-transform 1s ease; 
+	-ms-transition:-ms-transform 1s ease; 
+	-o-transition:-o-transform 1s ease; 
+	transition:transform 1s ease; 
+}
+
+#scale:hover{
+	-webkit-transform:scale(2);
+	-moz-transform:scale(2);
+	-ms-transform:scale(2);
+	-o-transform:scale(2);
+	transform:scale(2);
+}
+#translate:hover{
+	-webkit-transform:translate(20px, 30px);
+	-moz-transform:translate(20px, 30px);
+	-ms-transform:translate(20px, 30px);
+	-o-transform:translate(20px, 30px);
+	transform:translate(20px, 30px);
+}
+#rotate:hover{
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+#rotatex:hover{
+	-webkit-transform:rotateX(360deg);
+	-moz-transform:rotateX(360deg);
+	-ms-transform:rotateX(360deg);
+	-o-transform:rotateX(360deg);
+	transform:rotateX(360deg);
+}
+#rotateY:hover{
+	-webkit-transform:rotateY(360deg);
+	-moz-transform:rotateY(360deg);
+	-ms-transform:rotateY(360deg);
+	-o-transform:rotateY(360deg);
+	transform:rotateY(360deg);
+}
+</style>
+<div id="scale" class="box">Scale</div>
+<div id="translate" class="box">Translate</div>
+<div id="rotate" class="box">Rotate</div>
+<div id="rotatex" class="box">RotateX</div>
+<div id="rotatey" class="box">RotateY</div>
