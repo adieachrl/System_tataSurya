@@ -1,4 +1,761 @@
-<link rel="stylesheet" href="style.css" type="css/text">
+<style>
+body
+{
+	background: url('img/1412.png');
+	background-size:150% 200%;
+}
+img.sun{
+	top:0px;
+	left:450px;
+	position:fixed;
+}
+img.mercuri{
+	top:260px;
+	left:400px;
+	position:fixed;
+}
+img.venus{
+	top:330px;
+	left:400px;
+	position:fixed;
+}
+img.earth{
+	top:300px;
+	left:1080px;
+	position:fixed;
+}
+img.mars{
+	top:480px;
+	left:450px;
+	position:fixed;
+}
+img.jupiter{
+	top:300px;
+	left:1300px;
+	position:fixed;
+}
+img.satur{
+	top:520px;
+	left:600px;
+	position:fixed;
+}
+img.uranus{
+	top:580px;
+	left:1000px;
+	position:fixed;
+}
+img.neptun{
+	top:620px;
+	left:230px;
+	position:fixed;
+}
+
+img.satelit{
+	top:250px;
+	left:1030px;
+	position:fixed;
+}
+
+img.line{
+	top:250px;
+	left:400px;
+	position:fixed;
+}
+img.line1{
+	top:250px;
+	left:350px;
+	position:fixed;
+}
+img.line2{
+	top:250px;
+	left:280px;
+	position:fixed;
+}
+img.line3{
+	top:250px;
+	left:120px;
+	position:fixed;
+}
+img.line4{
+	top:250px;
+	left:60px;
+	position:fixed;
+}
+img.line5{
+	top:250px;
+	left:0px;
+	position:fixed;
+}
+img.line6{
+	top:250px;
+	left:-100px;
+	position:fixed;
+}
+img.line7{
+	top:250px;
+	left:-200px;
+	position:fixed;
+}
+
+#popup {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.window {
+	width: 700px;
+	height: 420px;
+	border:1px solid white;
+	opacity:.8;
+	border-radius: 10px;
+	position: absolute;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	text-align: left;
+	margin: 1% 25%;
+}
+.window1 {
+	width: auto;
+	height: auto;
+	border:1px solid white;
+	opacity:1.8;
+	border-radius: 10px;
+	text-align:center;
+}
+
+.close-button {
+	width: 20px;
+	height: 20px;
+	background: #000;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+#popup:target {
+	visibility: visible;
+}
+#popup0 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup0:target {
+	visibility: visible;
+}
+#popup1 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup1:target {
+	visibility: visible;
+}
+#popup2 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup2:target {
+	visibility: visible;
+}
+#popup3 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup3:target {
+	visibility: visible;
+}
+#popup4 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup4:target {
+	visibility: visible;
+}
+#popup5 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup5:target {
+	visibility: visible;
+}
+#popup6 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup6:target {
+	visibility: visible;
+}
+#popup7 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup7:target {
+	visibility: visible;
+}
+#popup8 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+#popup8:target {
+	visibility: visible;
+}
+
+
+#gambar {
+	float: left;
+	margin: 10px;
+	position: absolute;
+}
+#ket {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 150px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box {
+	position: absolute;
+	bottom: 90;
+	left: 500;
+	margin-left: 300px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket {
+	top:-20px;
+	margin-right:180px;
+	visibility:visible;	
+}
+#gambar:hover .box{
+	top:30px;
+	margin-left:320px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket1 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box1  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket1 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 20px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box1 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 50px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket1 {
+	top:-20px;
+	margin-right:-30px;
+	visibility:visible;	
+}
+#gambar:hover .box1{
+	top:220px;
+	margin-left:30px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket2 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box2  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket2 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 0px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box2 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 100px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket2 {
+	top:-20px;
+	margin-right:-35Px;
+	visibility:visible;	
+}
+#gambar:hover .box2{
+	top:440px;
+	margin-left:80px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket3 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box3  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket3 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 10px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box3 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 60px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket3 {
+	top:-20px;
+	margin-right:-30Px;
+	visibility:visible;	
+}
+#gambar:hover .box3{
+	top:300px;
+	margin-left:40px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket4 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box4  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket4 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 150px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box4 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 300px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket4 {
+	top:-20px;
+	margin-right:180px;
+	visibility:visible;	
+}
+#gambar:hover .box4{
+	top:580px;
+	margin-left:320px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket5 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box5  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket5 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 150px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box5 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 750px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket5 {
+	top:-20px;
+	margin-right:190px;
+	visibility:visible;	
+}
+#gambar:hover .box5{
+	top:480px;
+	margin-left:770px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket6 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box6  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket6 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 150px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box6 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 1080px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket6 {
+	top:-20px;
+	margin-right:190px;
+	visibility:visible;	
+}
+#gambar:hover .box6{
+	top:550px;
+	margin-left:1100px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket7 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box7  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket7 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 180px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box7 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 1120px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket7 {
+	top:-20px;
+	margin-right:210px;
+	visibility:visible;	
+}
+#gambar:hover .box7{
+	top:250px;
+	margin-left:1140px;
+	visibility:visible;
+	opacity:.8;
+}
+
+#ket8 {
+	width: auto;
+	height: 10;
+	text-align: left;
+	padding: 10px 50px;
+	background: gray;
+	color: #fff;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	border-radius: 0 5px;
+	visibility:hidden;
+}
+.box8  {
+	width: 300;
+	height: 100;
+	text-align: left;
+	padding: 10px 10px;
+	background: #fff;
+	opacity: 0.5;
+	visibility:hidden;
+	border:5px solid gray;
+}
+#gambar #ket8 {
+	position: absolute;
+	bottom: 90;
+	right: 0;
+	margin-right: 0px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar .box8 {
+	position: absolute;
+	bottom: 90;
+	left: 0;
+	margin-left: 970px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#gambar:hover #ket8 {
+	top:-20px;
+	margin-right:-25Px;
+	visibility:visible;	
+}
+#gambar:hover .box8{
+	top:350px;
+	margin-left:950px;
+	visibility:visible;
+	opacity:.8;
+}
+</style>
 </head>
 <body>
 <div id="gambar">
